@@ -50,7 +50,7 @@ describe('Chusha Dependency Injector', () => {
 
         LoggingCtor.inject = function () {
             return [OtherCtor];
-        }
+        };
 
         var other = new OtherCtor(1);
         Chusha.share(other, "OtherCtor");
